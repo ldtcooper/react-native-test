@@ -13,6 +13,7 @@ import {
   Image,
   Button
 } from 'react-native';
+import OutsideText from './outside_text.js';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -47,6 +48,7 @@ export default class App extends Component {
         onPress={this.viewText}
         title="Bork!"
         color="#841584"/>
+      <OutsideText/>
       </View>
     );
   }
