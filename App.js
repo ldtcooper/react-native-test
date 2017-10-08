@@ -9,7 +9,9 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image,
+  Button
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -24,8 +26,12 @@ export default class App extends Component<{}> {
     return (
       <View>
         <Text>
-          Hello, world!
+          Borky Borky Borky, can't you see? Sometimes your words just hypontize me.
         </Text>
+        <Image
+          style={{width: '100%', height: '100%'}}
+          source={{uri: 'https://i.imgur.com/UwCfDrI.jpg'}}
+        />
       </View>
     );
   }
